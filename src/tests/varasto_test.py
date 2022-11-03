@@ -1,7 +1,6 @@
 import unittest
 from varasto import Varasto
 
-
 class TestVarasto(unittest.TestCase):
     def setUp(self):
         self.varasto = Varasto(10)
@@ -60,6 +59,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_lisaa_liian_vahan(self):
         miinus = self.varasto.lisaa_varastoon(-1)
+        
         self.assertEqual(miinus, None)
 
     def test_str(self):
